@@ -4,7 +4,7 @@ class LinkedList {
 
      private size: number
 
-    constructor(private head: LinkedListNode | null = null) {
+    constructor(public head: LinkedListNode | null = null) {
         this.size = 0
     }
 
@@ -51,15 +51,6 @@ class LinkedList {
 
 }
 
-const list = new LinkedList()
-
-list.addFirst(4)
-list.addFirst(2)
-list.addLast(6)
-list.addLast(8)
-list.addFirst(9)
-
-list.printAllNodes()
-
-console.log("Size:: ", list.getSize())
-
+export {
+    LinkedList
+}
