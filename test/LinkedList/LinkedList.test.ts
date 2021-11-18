@@ -36,6 +36,17 @@ describe('LinkedList test', () => {
         
     })
 
+    it('should assign last element to head if linked list is empty', () => {
+        
+        const list = new LinkedList()
+
+        list.addLast(600)
+
+        expect(list.getSize()).toBe(1)
+        expect(list.head).toBeTruthy()
+        expect(list.head?.data).toBe(600)
+    })
+
     it('should add correct element to the last of the linked list', () => {
 
         const list = new LinkedList()
@@ -49,6 +60,7 @@ describe('LinkedList test', () => {
         const lastNode = list.traverse()
 
         expect(list.head).toBeTruthy()
+        expect(list.head?.data).toBe(3)
         expect(list.getSize()).toBe(5)
         expect(lastNode.data).toBe(34)
 
