@@ -1,4 +1,4 @@
-# Implementing most of the DSA in typescript
+# Implementing most of the DSA in TypeScript
 
 ## Roadmap
 
