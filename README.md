@@ -1,5 +1,7 @@
 # Implementing most of the DSA in TypeScript
 
+![example workflow](https://github.com/chetannn/dsa-in-typescript/actions/workflows/test.yml/badge.svg)
+
 ## Roadmap
 
 ### Data Structures
