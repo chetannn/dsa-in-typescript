@@ -20,21 +20,39 @@ class LinkedList {
 
     addLast(data: number) : number {
 
+        const node = new LinkedListNode(data)
+
+        if(!this.head) {
+            this.head = node
+            this.size++
+            return this.head.data
+        }
+
         let current = this.head
 
         while(current?.next) {
            current = current.next       
         }
-        
-        const node = new LinkedListNode(data)
+       
         current!.next = node
         this.size++
 
         return node.data
+    }
 
+    traverse() : LinkedListNode {
+
+        let current = this.head
+        
+        while(current?.next) {
+            current = current.next
+        }
+
+        return current!
     }
 
     printAllNodes() {
+        
         let current = this.head
         
         while(current) {
