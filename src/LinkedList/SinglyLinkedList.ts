@@ -1,6 +1,6 @@
 import { LinkedListNode } from './LinkedListNode'
 
-class LinkedList {
+class SinglyLinkedList {
 
      private size: number
 
@@ -70,5 +70,5 @@ class LinkedList {
 }
 
 export {
-    LinkedList
+    SinglyLinkedList
 }

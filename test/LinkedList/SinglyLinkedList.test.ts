@@ -1,10 +1,10 @@
-import { LinkedList } from '../../src/LinkedList/LinkedList'
+import { SinglyLinkedList } from '../../src/LinkedList/SinglyLinkedList'
 
-describe('LinkedList test', () => {
+describe('SinglyLinkedList test', () => {
 
     it('should create empty linked list', () => {
 
-        const list = new LinkedList()
+        const list = new SinglyLinkedList()
 
         expect(list).not.toBe(null)
         expect(list.head).toBeFalsy()
@@ -14,7 +14,7 @@ describe('LinkedList test', () => {
 
     it('should add an element to the first of the linked list', () => {
 
-        const list = new LinkedList()
+        const list = new SinglyLinkedList()
         const expectedValue = list.addFirst(2)
 
         expect(list.getSize()).toBe(1)
@@ -25,7 +25,7 @@ describe('LinkedList test', () => {
 
     it('should add correct element to the first of the linked list', () => {
        
-        const list = new LinkedList()
+        const list = new SinglyLinkedList()
 
         list.addFirst(5)
         list.addFirst(4)
@@ -38,7 +38,7 @@ describe('LinkedList test', () => {
 
     it('should assign last element to head if linked list is empty', () => {
         
-        const list = new LinkedList()
+        const list = new SinglyLinkedList()
 
         list.addLast(600)
 
@@ -49,7 +49,7 @@ describe('LinkedList test', () => {
 
     it('should add correct element to the last of the linked list', () => {
 
-        const list = new LinkedList()
+        const list = new SinglyLinkedList()
 
         list.addLast(3)
         list.addLast(2)
