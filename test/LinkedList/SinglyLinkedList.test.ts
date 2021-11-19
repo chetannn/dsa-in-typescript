@@ -20,6 +20,7 @@ describe('SinglyLinkedList test', () => {
         expect(list.getSize()).toBe(1)
         expect(list.head).toBeTruthy()
         expect(2).toBe(expectedValue)
+        expect(list.tail).toBe(list.head)
 
     })
 
@@ -33,6 +34,7 @@ describe('SinglyLinkedList test', () => {
 
         expect(list.getSize()).toBe(3)
         expect(list.head?.data).toBe(200)
+        expect(list.tail?.data).toBe(5)
         
     })
 
@@ -44,6 +46,7 @@ describe('SinglyLinkedList test', () => {
 
         expect(list.getSize()).toBe(1)
         expect(list.head).toBeTruthy()
+        expect(list.tail).toBe(list.head)
         expect(list.head?.data).toBe(600)
     })
 
@@ -63,6 +66,7 @@ describe('SinglyLinkedList test', () => {
         expect(list.head?.data).toBe(3)
         expect(list.getSize()).toBe(5)
         expect(lastNode.data).toBe(34)
+        expect(list.tail).toBe(lastNode)
 
     })
 
