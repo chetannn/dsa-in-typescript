@@ -3,9 +3,11 @@ import { LinkedListNode } from './LinkedListNode'
 class SinglyLinkedList {
 
      private size: number
+     public tail: LinkedListNode | null
 
     constructor(public head: LinkedListNode | null = null) {
         this.size = 0
+        this.tail = null
     }
 
     addFirst(data : number) : number {
@@ -13,6 +15,11 @@ class SinglyLinkedList {
         const node = new LinkedListNode(data, this.head)
 
         this.head = node
+
+        if(!this.tail) {
+            this.tail = this.head
+        }
+
         this.size++
 
         return node.data
@@ -23,18 +30,11 @@ class SinglyLinkedList {
         const node = new LinkedListNode(data)
 
         if(!this.head) {
-            this.head = node
-            this.size++
-            return this.head.data
+            return this.addFirst(data)
         }
-
-        let current = this.head
-
-        while(current?.next) {
-           current = current.next       
-        }
-       
-        current!.next = node
+        
+        this.tail!.next = node
+        this.tail = node
         this.size++
 
         return node.data
