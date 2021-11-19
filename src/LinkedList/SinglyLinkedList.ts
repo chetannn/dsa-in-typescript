@@ -120,6 +120,3 @@ class SinglyLinkedList {
 export {
     SinglyLinkedList
 }
-
-
-// it is the art and science of identifying, analyzing and responding to risk throughout the list of a project
