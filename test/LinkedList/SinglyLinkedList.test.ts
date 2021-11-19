@@ -136,4 +136,31 @@ describe('SinglyLinkedList test', () => {
         expect(list.tail?.next).toBeNull()
     })
 
+
+    it('should use fromArray method to convert all the array items to linked list',  () => {
+
+        const list = new SinglyLinkedList()
+        const arr = [2,5,6,8,12]
+
+        list.fromArray(arr)
+
+        expect(list.getSize()).toBe(arr.length)
+        expect(list.head?.data).toBe(2)
+        expect(list.tail?.data).toBe(12)
+        expect(list.tail?.next).toBeNull()
+
+    })
+
+    it('should throw index out of bound if the index exceeds the linked list', () => {
+
+        const list = new SinglyLinkedList()
+
+        list.addLast(20)
+        list.addLast(40)
+        list.addLast(70)
+        list.addLast(800)
+
+        expect(() => { list.deleteAt(10) }).toThrow('Index out of bound')
+    })
+
   })

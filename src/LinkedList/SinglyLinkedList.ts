@@ -52,6 +52,30 @@ class SinglyLinkedList {
 
     }
 
+    deleteAt(index: number) : void {
+
+        if(index > 0 && index > this.getSize()) {
+            throw new Error('Index out of bound')
+        }
+
+        if(index === 0) {
+            this.deleteFirst()
+        }
+
+        if(index === this.getSize() - 1)  {
+            this.deleteLast()
+        }
+
+        else {
+
+            let prevNode = this.getAt(index - 1)
+            prevNode.next = prevNode.next?.next!
+            
+        }
+
+
+    }
+
     deleteFirst() : void {
 
         if(!this.head) {
@@ -113,6 +137,15 @@ class SinglyLinkedList {
 
     getSize() {
         return this.size
+    }
+
+    fromArray(arr: Array<number>) {
+
+        if(!arr) {
+            return
+        }
+
+        arr.forEach(element => this.addLast(element))
     }
 
 }
