@@ -70,4 +70,70 @@ describe('SinglyLinkedList test', () => {
 
     })
 
+    it('should delete correct element from the first of the linked list if list has only one element', () => {
+
+        const list = new SinglyLinkedList()
+
+        list.addFirst(5)
+
+        list.deleteFirst()
+
+        expect(list.getSize()).toBe(0)
+        expect(list.head).toBeNull()
+        expect(list.tail).toBeNull()
+
+    })
+
+    it('should delete multiple elements from the first of the linked list if list has more than one element', () => {
+
+        const list = new SinglyLinkedList()
+
+        list.addFirst(5)
+        list.addFirst(6)
+        list.addFirst(8)
+        list.addFirst(12)
+
+        list.deleteFirst()
+        list.deleteFirst()
+        list.deleteFirst()
+
+        expect(list.getSize()).toBe(1)
+        expect(list.head?.data).toBe(5)
+        expect(list.tail).toBe(list.head)
+
+    })
+
+    it('should delete correct element from the last of the linked list if list has only one element', () => {
+
+        const list = new SinglyLinkedList()
+
+        list.addLast(20)
+
+        list.deleteLast()
+
+        expect(list.getSize()).toBe(0)
+        expect(list.tail).toBeNull()
+        expect(list.head).toBeNull()
+
+    })
+
+    it('should delete multiple elements from the last of the linked list if list has more than on element', () => {
+
+        const list = new SinglyLinkedList()
+
+        list.addLast(20)
+        list.addLast(30)
+        list.addLast(40)
+        list.addLast(50)
+
+        const secondNode = list.getAt(1)
+
+        list.deleteLast()
+        list.deleteLast()
+
+        expect(list.getSize()).toBe(2)
+        expect(list.tail).toBe(secondNode)
+        expect(list.tail?.next).toBeNull()
+    })
+
   })

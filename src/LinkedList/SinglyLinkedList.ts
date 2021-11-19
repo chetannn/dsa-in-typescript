@@ -40,6 +40,54 @@ class SinglyLinkedList {
         return node.data
     }
 
+    getAt(index: number) : LinkedListNode {
+
+        let current = this.head
+
+        for(let i = 0; i < index; i++) {
+            current = current!.next
+        }
+
+        return current!
+
+    }
+
+    deleteFirst() : void {
+
+        if(!this.head) {
+            return
+        }
+
+        if(this.getSize() === 1) {
+            this.head = null
+            this.tail = null
+        }
+
+        else {
+            this.head = this.head.next
+        }
+
+        this.size--
+       
+    }
+
+    deleteLast() : void {
+
+        if(this.getSize() <= 1) {
+            this.deleteFirst()
+        }
+
+        else {
+           let secondLastNode = this.getAt(this.getSize() - 2)
+           this.tail = secondLastNode
+           this.tail.next = null
+           this.size--
+        }
+
+        
+    }
+
+
     traverse() : LinkedListNode {
 
         let current = this.head
@@ -72,3 +120,6 @@ class SinglyLinkedList {
 export {
     SinglyLinkedList
 }
+
+
+// it is the art and science of identifying, analyzing and responding to risk throughout the list of a project
