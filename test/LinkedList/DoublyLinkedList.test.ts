@@ -13,4 +13,34 @@ describe('DoublyLinkedList tests', () => {
         expect(list.getSize()).toBe(0)
 
     })
+
+    it('should add an element to the first of the doubly linked list', () => {
+
+        let list = new DoublyLinkedList()
+
+        const addedValue = list.addFirst(20)
+
+        expect(list.getSize()).toBe(1)
+        expect(list.head).toBeTruthy()
+        expect(list.tail).toBeTruthy()
+        expect(addedValue).toBe(20)
+
+    })
+
+    it('should and multiple element to the first of the doubly linked list', () => {
+
+        let list = new DoublyLinkedList()
+
+        list.addFirst(20)
+        list.addFirst(60)
+        list.addFirst(121)
+        list.addFirst(300)
+
+        expect(list.getSize()).toBe(4)
+        expect(list.head?.data).toBe(300)
+        expect(list.tail?.data).toBe(20)
+        expect(list.head?.prev).toBeNull()
+        expect(list.tail?.next).toBeNull()
+        expect(list.head?.next?.next).toBe(list.tail?.prev)
+    })
 })
