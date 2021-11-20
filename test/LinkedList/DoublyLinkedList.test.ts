@@ -27,7 +27,7 @@ describe('DoublyLinkedList tests', () => {
 
     })
 
-    it('should and multiple element to the first of the doubly linked list', () => {
+    it('should and multiple elements to the first of the doubly linked list', () => {
 
         let list = new DoublyLinkedList()
 

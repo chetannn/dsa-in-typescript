@@ -7,7 +7,7 @@
 ### Data Structures
 
 * [x] Singly Linked List (insertFirst, insertLast, traverse, getAt, deleteFirst, deleteLast, deleteAt)
-* [] Doubly Linked List
+* [x] Doubly Linked List (insertFirst)
 * [] Queues
 * [] Stack
 * [] Trees
