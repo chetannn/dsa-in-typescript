@@ -1,12 +1,12 @@
 # Implementing most of the DSA in TypeScript
 
-![example workflow](https://github.com/chetannn/dsa-in-typescript/actions/workflows/test.yml/badge.svg)
+![test ci](https://github.com/chetannn/dsa-in-typescript/actions/workflows/test.yml/badge.svg)
 
 ## Roadmap
 
 ### Data Structures
 
-* [x] Singly Linked List (insertFirst, insertLast, traverse, getAt, deleteFirst, deleteLast)
+* [x] Singly Linked List (insertFirst, insertLast, traverse, getAt, deleteFirst, deleteLast, deleteAt)
 * [] Doubly Linked List
 * [] Queues
 * [] Stack
