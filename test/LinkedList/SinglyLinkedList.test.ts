@@ -163,4 +163,25 @@ describe('SinglyLinkedList test', () => {
         expect(() => { list.deleteAt(10) }).toThrow('Index out of bound')
     })
 
+    it('should delete the correct element from the linked list using the index', () => {
+
+        const list = new SinglyLinkedList()
+
+        list.addLast(20)
+        list.addLast(40)
+        list.addLast(70)
+        list.addLast(800)
+
+        list.deleteAt(2)
+
+        const secondNode = list.getAt(1)
+        const lastNode = list.traverse()
+
+        expect(list.getSize()).toBe(3)
+        expect(secondNode.next).toBe(lastNode)
+        expect(lastNode).toBe(list.tail)
+        expect(lastNode.next).toBe(null)
+
+    })
+
   })

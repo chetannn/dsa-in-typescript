@@ -70,6 +70,7 @@ class SinglyLinkedList {
 
             let prevNode = this.getAt(index - 1)
             prevNode.next = prevNode.next?.next!
+            this.size--
             
         }
 
