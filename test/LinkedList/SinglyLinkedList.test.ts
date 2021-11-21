@@ -184,4 +184,20 @@ describe('SinglyLinkedList test', () => {
 
     })
 
+    it('should find the correct element from the linked list using value', () => {
+      
+        const list = new SinglyLinkedList()
+
+        list.addLast(20)
+        list.addLast(40)
+        list.addLast(60)
+
+        const node = list.find(60)
+
+        expect(node).not.toBeNull()
+        expect(node.data).toBe(60)
+        expect(node.next).toBe(null)
+
+    })
+
   })

@@ -112,6 +112,23 @@ class SinglyLinkedList {
         
     }
 
+    find(data: number) : LinkedListNode {
+
+        let current = this.head
+
+        while(current) {
+            
+            if(current.data === data) {
+                break
+            }
+            
+            current = current.next
+        }
+
+        return current!
+
+    }
+
 
     traverse() : LinkedListNode {
 
