@@ -34,6 +34,20 @@ class DoublyLinkedList {
         return node.data
     }
 
+    addLast(data: number) : number {
+
+        if(!this.head) {
+            return this.addFirst(data)
+        }
+
+        const node = new DoublyLinkedListNode(data, this.tail, null)
+        this.tail = node
+        this.size++
+
+        return node.data
+
+    }
+
     getSize() {
         return this.size
     }

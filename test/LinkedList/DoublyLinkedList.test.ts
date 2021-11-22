@@ -43,4 +43,24 @@ describe('DoublyLinkedList tests', () => {
         expect(list.tail?.next).toBeNull()
         expect(list.head?.next?.next).toBe(list.tail?.prev)
     })
+
+    it('should add an element to the last of the doubly linked list', () => {
+
+        let list = new DoublyLinkedList()
+
+        const addedValue = list.addLast(20)
+
+        expect(list.getSize()).toBe(1)
+        expect(list.head).toBeTruthy()
+        expect(list.tail).toBeTruthy()
+        expect(addedValue).toBe(20)
+
+        list.addLast(30)
+        expect(list.tail?.data).toBe(30)
+
+        list.addLast(60)
+        expect(list.tail?.data).toBe(60)
+        expect(list.getSize()).toBe(3)
+
+    })
 })
