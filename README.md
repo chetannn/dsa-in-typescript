@@ -31,5 +31,5 @@
 ### Resources
 
 - Linked List
-  [Kunal Kushwaha YouTube](https://www.youtube.com/watch?v=58YbpRDc4yw).
-  [Traversy Media YouTube](https://www.youtube.com/watch?v=58YbpRDc4yw).
+  - [Kunal Kushwaha YouTube](https://www.youtube.com/watch?v=58YbpRDc4yw).
+  - [Traversy Media YouTube](https://www.youtube.com/watch?v=58YbpRDc4yw).
