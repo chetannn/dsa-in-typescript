@@ -40,6 +40,18 @@ class SinglyLinkedList {
         return node.data
     }
 
+    insertAfter(data: number, afterData: number) {
+
+        const existingNode = this.find(afterData)
+
+        if(existingNode) {
+            const node = new LinkedListNode(data, existingNode.next)
+            existingNode.next = node
+            this.size++
+        }
+
+    }
+
     getAt(index: number) : LinkedListNode {
 
         let current = this.head
@@ -164,6 +176,25 @@ class SinglyLinkedList {
         }
 
         arr.forEach(element => this.addLast(element))
+    }
+
+    toArray() : Array<number> {
+
+        if(!this.head) {
+            return []
+        }
+
+        const newArray: Array<number> = []
+
+        let current = this.head
+
+        while(current) {
+            newArray.push(current.data)
+            current = current.next!
+        }
+
+
+        return newArray
     }
 
 }
