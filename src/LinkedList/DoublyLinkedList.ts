@@ -40,7 +40,7 @@ class DoublyLinkedList {
             return this.addFirst(data)
         }
 
-        const node = new DoublyLinkedListNode(data, this.tail, null)
+        const node = new DoublyLinkedListNode(data, this.tail)
         this.tail = node
         this.size++
 
