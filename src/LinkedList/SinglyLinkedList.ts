@@ -153,6 +153,26 @@ class SinglyLinkedList {
         return current!
     }
 
+    reverse() : void {
+
+        let current = this.head
+        let temp = null
+        let prev = null
+
+        this.tail = current
+
+        while(current) {
+            temp = current.next
+            current.next = prev
+
+            prev = current
+            current = temp
+        }
+
+
+        this.head = prev
+    }
+
     printAllNodes() {
         
         let current = this.head

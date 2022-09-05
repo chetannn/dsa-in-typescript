@@ -1,3 +1,4 @@
+import exp from 'constants'
 import { SinglyLinkedList } from '../../src/LinkedList/SinglyLinkedList'
 
 describe('SinglyLinkedList test', () => {
@@ -235,6 +236,23 @@ describe('SinglyLinkedList test', () => {
         expect(node).not.toBeNull()
         expect(node.data).toBe(60)
         expect(node.next).toBe(null)
+
+    })
+
+    it('should reverse the linked list', () => {
+        
+        const list = new SinglyLinkedList()
+
+        list.addLast(20)
+        list.addLast(40)
+        list.addLast(60)
+
+        list.reverse()
+
+
+        expect(list.head?.data).toBe(60)
+        expect(list.tail?.data).toBe(20)
+        expect(list.getAt(1).data).toBe(40)
 
     })
 
