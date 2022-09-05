@@ -17,8 +17,8 @@
 ### Algorithms
 
 * [] Linear Search
-* [] Binary Search
-* [] Bubble Sort
+* [x] Binary Search
+* [x] Bubble Sort
 * [] Quick Sort
 * [] Selection Sort
 * [x] Merge Sort
