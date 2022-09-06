@@ -1,29 +1,23 @@
 import { DoublyLinkedListNode } from './DoublyLinkedListNode'
 
 class DoublyLinkedList {
-
     private size: number
     public head: DoublyLinkedListNode | null
     public tail: DoublyLinkedListNode | null
 
     constructor() {
-
         this.size = 0
         this.head = null
         this.tail = null
-
     }
 
     addFirst(data: number) {
-
         const node = new DoublyLinkedListNode(data, null, null)
-        
-        if(!this.head) {
+
+        if (!this.head) {
             this.head = node
             this.tail = node
-        }
-
-        else {
+        } else {
             node.next = this.head
             this.head.prev = node
             this.head = node
@@ -34,9 +28,8 @@ class DoublyLinkedList {
         return node.data
     }
 
-    addLast(data: number) : number {
-
-        if(!this.head) {
+    addLast(data: number): number {
+        if (!this.head) {
             return this.addFirst(data)
         }
 
@@ -45,7 +38,6 @@ class DoublyLinkedList {
         this.size++
 
         return node.data
-
     }
 
     getSize() {
@@ -53,6 +45,4 @@ class DoublyLinkedList {
     }
 }
 
-export {
-    DoublyLinkedList
-}
+export { DoublyLinkedList }

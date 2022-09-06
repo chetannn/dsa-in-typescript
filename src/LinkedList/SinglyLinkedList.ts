@@ -1,22 +1,20 @@
 import { LinkedListNode } from './LinkedListNode'
 
 class SinglyLinkedList {
-
-     private size: number
-     public tail: LinkedListNode | null
+    private size: number
+    public tail: LinkedListNode | null
 
     constructor(public head: LinkedListNode | null = null) {
         this.size = 0
         this.tail = null
     }
 
-    addFirst(data : number) : number {
-
+    addFirst(data: number): number {
         const node = new LinkedListNode(data, this.head)
 
         this.head = node
 
-        if(!this.tail) {
+        if (!this.tail) {
             this.tail = this.head
         }
 
@@ -25,14 +23,13 @@ class SinglyLinkedList {
         return node.data
     }
 
-    addLast(data: number) : number {
-
+    addLast(data: number): number {
         const node = new LinkedListNode(data)
 
-        if(!this.head) {
+        if (!this.head) {
             return this.addFirst(data)
         }
-        
+
         this.tail!.next = node
         this.tail = node
         this.size++
@@ -41,127 +38,101 @@ class SinglyLinkedList {
     }
 
     insertAfter(data: number, afterData: number) {
-
         const existingNode = this.find(afterData)
 
-        if(existingNode) {
+        if (existingNode) {
             const node = new LinkedListNode(data, existingNode.next)
             existingNode.next = node
             this.size++
         }
-
     }
 
-    getAt(index: number) : LinkedListNode {
-
+    getAt(index: number): LinkedListNode {
         let current = this.head
 
-        for(let i = 0; i < index; i++) {
+        for (let i = 0; i < index; i++) {
             current = current!.next
         }
 
         return current!
-
     }
 
-    deleteAt(index: number) : void {
-
-        if(index > 0 && index > this.getSize()) {
+    deleteAt(index: number): void {
+        if (index > 0 && index > this.getSize()) {
             throw new Error('Index out of bound')
         }
 
-        if(index === 0) {
+        if (index === 0) {
             this.deleteFirst()
         }
 
-        if(index === this.getSize() - 1)  {
+        if (index === this.getSize() - 1) {
             this.deleteLast()
-        }
-
-        else {
-
+        } else {
             let prevNode = this.getAt(index - 1)
             prevNode.next = prevNode.next?.next!
             this.size--
-            
         }
-
-
     }
 
-    deleteFirst() : void {
-
-        if(!this.head) {
+    deleteFirst(): void {
+        if (!this.head) {
             return
         }
 
-        if(this.getSize() === 1) {
+        if (this.getSize() === 1) {
             this.head = null
             this.tail = null
-        }
-
-        else {
+        } else {
             this.head = this.head.next
         }
 
         this.size--
-       
     }
 
-    deleteLast() : void {
-
-        if(this.getSize() <= 1) {
+    deleteLast(): void {
+        if (this.getSize() <= 1) {
             this.deleteFirst()
+        } else {
+            let secondLastNode = this.getAt(this.getSize() - 2)
+            this.tail = secondLastNode
+            this.tail.next = null
+            this.size--
         }
-
-        else {
-           let secondLastNode = this.getAt(this.getSize() - 2)
-           this.tail = secondLastNode
-           this.tail.next = null
-           this.size--
-        }
-
-        
     }
 
-    find(data: number) : LinkedListNode {
-
+    find(data: number): LinkedListNode {
         let current = this.head
 
-        while(current) {
-            
-            if(current.data === data) {
+        while (current) {
+            if (current.data === data) {
                 break
             }
-            
+
             current = current.next
         }
 
         return current!
-
     }
 
-
-    traverse() : LinkedListNode {
-
+    traverse(): LinkedListNode {
         let current = this.head
-        
-        while(current?.next) {
+
+        while (current?.next) {
             current = current.next
         }
 
         return current!
     }
 
-    reverse() : void {
-
+    reverse(): void {
         let current = this.head
         let temp = null
         let prev = null
 
         this.tail = current
 
-        while(current) {
+        while (current) {
             temp = current.next
             current.next = prev
 
@@ -169,20 +140,17 @@ class SinglyLinkedList {
             current = temp
         }
 
-
         this.head = prev
     }
 
     printAllNodes() {
-        
         let current = this.head
-        
-        while(current) {
+
+        while (current) {
             console.log(current.data)
 
             current = current.next
         }
-
     }
 
     getSize() {
@@ -190,17 +158,15 @@ class SinglyLinkedList {
     }
 
     fromArray(arr: Array<number>) {
-
-        if(!arr) {
+        if (!arr) {
             return
         }
 
-        arr.forEach(element => this.addLast(element))
+        arr.forEach((element) => this.addLast(element))
     }
 
-    toArray() : Array<number> {
-
-        if(!this.head) {
+    toArray(): Array<number> {
+        if (!this.head) {
             return []
         }
 
@@ -208,17 +174,13 @@ class SinglyLinkedList {
 
         let current = this.head
 
-        while(current) {
+        while (current) {
             newArray.push(current.data)
             current = current.next!
         }
 
-
         return newArray
     }
-
 }
 
-export {
-    SinglyLinkedList
-}
+export { SinglyLinkedList }
