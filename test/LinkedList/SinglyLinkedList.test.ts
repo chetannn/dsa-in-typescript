@@ -1,4 +1,3 @@
-import exp from 'constants'
 import { SinglyLinkedList } from '../../src/LinkedList/SinglyLinkedList'
 
 describe('SinglyLinkedList test', () => {
