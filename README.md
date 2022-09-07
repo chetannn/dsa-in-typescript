@@ -21,7 +21,7 @@
 * [x] Bubble Sort
 * [] Quick Sort
 * [] Selection Sort
-* [] Insertion Sort
+* [x] Insertion Sort
 * [x] Merge Sort
 
 ### Recursions
