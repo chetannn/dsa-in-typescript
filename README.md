@@ -20,7 +20,7 @@
 * [x] Binary Search
 * [x] Bubble Sort
 * [] Quick Sort
-* [] Selection Sort
+* [x] Selection Sort
 * [x] Insertion Sort
 * [x] Merge Sort
 
