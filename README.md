@@ -34,6 +34,7 @@
 
 * [x] Find Duplicates
 * [x] Two Sum
+* [x] Self Dividing Numbers
 
 ### Resources
 
