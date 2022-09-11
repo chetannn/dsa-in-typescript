@@ -28,6 +28,8 @@
 
 * [] Tower Of Hanoi
 * [] Fibonacci Series
+* [x] smallest number in an array
+* [x] sum of an array
 
 
 ### Problems
