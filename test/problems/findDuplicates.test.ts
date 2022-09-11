@@ -1,4 +1,5 @@
 import findDuplicates from '../../src/problems/findDuplicates'
+import selfDividing from '../../src/problems/selfDividingNumber'
 import twoSum from '../../src/problems/twoSum'
 
 describe('tests for the practical problems', function () {
@@ -12,5 +13,12 @@ describe('tests for the practical problems', function () {
 
         expect(indices.length).toBe(2)
         expect(indices).toStrictEqual([3, 4])
+    })
+
+    it('returns all the self dividing numbers within a range', function () {
+        const nums = selfDividing(1, 22)
+
+        expect(nums.length).toBe(13)
+        expect(nums).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22])
     })
 })
