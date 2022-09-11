@@ -143,21 +143,19 @@ class SinglyLinkedList {
         this.head = prev
     }
 
-    hasCycle() : boolean {
+    hasCycle(): boolean {
+        if (!this.head) return false
 
-        if(!this.head) return false
+        let slow = this.head,
+            fast = this.head
 
-        let slow = this.head, fast = this.head
-
-        while(fast != null && fast.next != null) {
-
-            if(fast == slow) {
+        while (fast != null && fast.next != null) {
+            if (fast == slow) {
                 return true
             }
 
             slow = slow.next!
             fast = fast.next.next!
-            
         }
 
         return false

@@ -6,7 +6,7 @@
 
 ### Data Structures
 
-* [x] Singly Linked List (insertFirst, insertLast, insertAfter, toArray, fromArray, traverse, getAt, deleteFirst, deleteLast, deleteAt, find)
+* [x] Singly Linked List (insertFirst, insertLast, insertAfter, toArray, fromArray, traverse, getAt, deleteFirst, deleteLast, deleteAt, find, hasCycle, Reverse)
 * [x] Doubly Linked List (insertFirst, insertLast)
 * [] Queues
 * [] Stack
@@ -28,6 +28,12 @@
 
 * [] Tower Of Hanoi
 * [] Fibonacci Series
+
+
+### Problems
+
+* [x] Find Duplicates
+* [x] Two Sum
 
 ### Resources
 

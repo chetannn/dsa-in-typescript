@@ -225,20 +225,18 @@ describe('SinglyLinkedList test', () => {
         expect(list.getAt(1).data).toBe(40)
     })
 
-    it('should detect the cycle in the linked list', function() {
-        
-         const list = new SinglyLinkedList()
+    it('should detect the cycle in the linked list', function () {
+        const list = new SinglyLinkedList()
 
-         const arrs = [1,2,3,4,5,6,7,8]
+        const arrs = [1, 2, 3, 4, 5, 6, 7, 8]
 
-         list.fromArray(arrs)
+        list.fromArray(arrs)
 
-         const lastNode = list.find(8)
-         const node = list.find(4)
+        const lastNode = list.find(8)
+        const node = list.find(4)
 
-         lastNode.next = node
+        lastNode.next = node
 
-         expect(list.hasCycle()).toBeTruthy()
-
+        expect(list.hasCycle()).toBeTruthy()
     })
 })
