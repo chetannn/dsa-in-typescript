@@ -1,4 +1,5 @@
 import findDuplicates from '../../src/problems/findDuplicates'
+import maxSubArray from '../../src/problems/maxSubArray'
 import selfDividing from '../../src/problems/selfDividingNumber'
 import twoSum from '../../src/problems/twoSum'
 
@@ -20,5 +21,11 @@ describe('tests for the practical problems', function () {
 
         expect(nums.length).toBe(13)
         expect(nums).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22])
+    })
+
+    it('should return maximum sub array sum', function () {
+        const maxSubArraySum = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+
+        expect(maxSubArraySum).toBe(6)
     })
 })

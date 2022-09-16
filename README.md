@@ -37,6 +37,7 @@
 * [x] Find Duplicates
 * [x] Two Sum
 * [x] Self Dividing Numbers
+* [x] Maximum sub array sum
 
 ### Resources
 
