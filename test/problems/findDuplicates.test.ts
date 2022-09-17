@@ -1,3 +1,4 @@
+import baseBallGame from '../../src/problems/baseBallGame'
 import findDuplicates from '../../src/problems/findDuplicates'
 import maxSubArray from '../../src/problems/maxSubArray'
 import selfDividing from '../../src/problems/selfDividingNumber'
@@ -27,5 +28,13 @@ describe('tests for the practical problems', function () {
         const maxSubArraySum = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
 
         expect(maxSubArraySum).toBe(6)
+    })
+
+    it('base ball game score', function () {
+        const scoreOne = baseBallGame(['5', '2', 'C', 'D', '+'])
+        const scoreTwo = baseBallGame(['5', '-2', '4', 'C', 'D', '9', '+', '+'])
+
+        expect(scoreOne).toEqual(30)
+        expect(scoreTwo).toEqual(27)
     })
 })
