@@ -1,6 +1,7 @@
 import baseBallGame from '../../src/problems/baseBallGame'
 import findDuplicates from '../../src/problems/findDuplicates'
 import maxSubArray from '../../src/problems/maxSubArray'
+import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
 import selfDividing from '../../src/problems/selfDividingNumber'
 import twoSum from '../../src/problems/twoSum'
 
@@ -36,5 +37,13 @@ describe('tests for the practical problems', function () {
 
         expect(scoreOne).toEqual(30)
         expect(scoreTwo).toEqual(27)
+    })
+
+    it('reverse string using in place', function () {
+        const arr = ['h', 'e', 'l', 'l', 'o']
+
+        reverseStringInPlace(arr)
+
+        expect(arr).toEqual(['o', 'l', 'l', 'e', 'h'])
     })
 })

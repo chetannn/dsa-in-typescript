@@ -39,6 +39,7 @@
 * [x] Self Dividing Numbers
 * [x] Maximum sub array sum
 * [x] Base ball game
+* [x] Reverse string using in place
 
 ### Resources
 
