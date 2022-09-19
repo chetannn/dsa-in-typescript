@@ -30,6 +30,7 @@
 * [] Fibonacci Series
 * [x] smallest number in an array
 * [x] sum of an array
+* [x] reverse string
 
 
 ### Problems
@@ -40,6 +41,7 @@
 * [x] Maximum sub array sum
 * [x] Base ball game
 * [x] Reverse string using in place
+* [x] Reverse string using stack
 
 ### Resources
 

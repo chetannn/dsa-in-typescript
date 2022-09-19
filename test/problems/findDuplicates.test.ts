@@ -2,6 +2,7 @@ import baseBallGame from '../../src/problems/baseBallGame'
 import findDuplicates from '../../src/problems/findDuplicates'
 import maxSubArray from '../../src/problems/maxSubArray'
 import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
+import reverseStringStack from '../../src/problems/reverseStringStack'
 import selfDividing from '../../src/problems/selfDividingNumber'
 import twoSum from '../../src/problems/twoSum'
 
@@ -43,6 +44,16 @@ describe('tests for the practical problems', function () {
         const arr = ['h', 'e', 'l', 'l', 'o']
 
         reverseStringInPlace(arr)
+
+        expect(arr).toEqual(['o', 'l', 'l', 'e', 'h'])
+    })
+
+    it('reverse string using stack', function() {
+
+        const arr = ['h', 'e', 'l', 'l', 'o']
+
+        reverseStringStack(arr)
+        
 
         expect(arr).toEqual(['o', 'l', 'l', 'e', 'h'])
     })
