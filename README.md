@@ -42,6 +42,7 @@
 * [x] Base ball game
 * [x] Reverse string using in place
 * [x] Reverse string using stack
+* [x] Power of three
 
 ### Resources
 

@@ -1,6 +1,7 @@
 import baseBallGame from '../../src/problems/baseBallGame'
 import findDuplicates from '../../src/problems/findDuplicates'
 import maxSubArray from '../../src/problems/maxSubArray'
+import isPowerOfThree from '../../src/problems/powerOfThree'
 import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
 import reverseStringStack from '../../src/problems/reverseStringStack'
 import selfDividing from '../../src/problems/selfDividingNumber'
@@ -48,13 +49,18 @@ describe('tests for the practical problems', function () {
         expect(arr).toEqual(['o', 'l', 'l', 'e', 'h'])
     })
 
-    it('reverse string using stack', function() {
-
+    it('reverse string using stack', function () {
         const arr = ['h', 'e', 'l', 'l', 'o']
 
         reverseStringStack(arr)
-        
 
         expect(arr).toEqual(['o', 'l', 'l', 'e', 'h'])
+    })
+
+    it('power of three', function () {
+        expect(isPowerOfThree(1)).toBeTruthy()
+        expect(isPowerOfThree(27)).toBeTruthy()
+        expect(isPowerOfThree(45)).toBeFalsy()
+        expect(isPowerOfThree(-1)).toBeFalsy()
     })
 })
