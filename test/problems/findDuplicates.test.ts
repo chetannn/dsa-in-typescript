@@ -6,6 +6,7 @@ import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
 import reverseStringStack from '../../src/problems/reverseStringStack'
 import selfDividing from '../../src/problems/selfDividingNumber'
 import twoSum from '../../src/problems/twoSum'
+import isValidParentheses from '../../src/problems/validParentheses'
 
 describe('tests for the practical problems', function () {
     it('check for duplicate in an array', function () {
@@ -62,5 +63,13 @@ describe('tests for the practical problems', function () {
         expect(isPowerOfThree(27)).toBeTruthy()
         expect(isPowerOfThree(45)).toBeFalsy()
         expect(isPowerOfThree(-1)).toBeFalsy()
+    })
+
+    it('valid parentheses', function() {
+        expect(isValidParentheses('[')).toBeFalsy()
+        expect(isValidParentheses('[]')).toBeTruthy()
+        expect(isValidParentheses(']()')).toBeFalsy()
+        expect(isValidParentheses('()[]{}')).toBeTruthy()
+        expect(isValidParentheses('[({})]')).toBeTruthy()
     })
 })
