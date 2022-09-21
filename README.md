@@ -44,6 +44,7 @@
 * [x] Reverse string using stack
 * [x] Power of three
 * [x] Valid parentheses
+* [x] Valid anagarams
 
 ### Resources
 

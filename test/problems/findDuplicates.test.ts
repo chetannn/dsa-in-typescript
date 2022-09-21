@@ -6,6 +6,7 @@ import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
 import reverseStringStack from '../../src/problems/reverseStringStack'
 import selfDividing from '../../src/problems/selfDividingNumber'
 import twoSum from '../../src/problems/twoSum'
+import validAnagram from '../../src/problems/validAnagram'
 import isValidParentheses from '../../src/problems/validParentheses'
 
 describe('tests for the practical problems', function () {
@@ -71,5 +72,10 @@ describe('tests for the practical problems', function () {
         expect(isValidParentheses(']()')).toBeFalsy()
         expect(isValidParentheses('()[]{}')).toBeTruthy()
         expect(isValidParentheses('[({})]')).toBeTruthy()
+    })
+
+    it('valid anagrams', function() {
+        expect(validAnagram('anagram', 'nagaram')).toBeTruthy()
+        expect(validAnagram('rat', 'car')).toBeFalsy()
     })
 })
