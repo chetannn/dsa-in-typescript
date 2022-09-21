@@ -7,6 +7,7 @@ import reverseStringStack from '../../src/problems/reverseStringStack'
 import selfDividing from '../../src/problems/selfDividingNumber'
 import twoSum from '../../src/problems/twoSum'
 import validAnagram from '../../src/problems/validAnagram'
+import validPalindrome from '../../src/problems/validPalindrome'
 import isValidParentheses from '../../src/problems/validParentheses'
 
 describe('tests for the practical problems', function () {
@@ -77,5 +78,11 @@ describe('tests for the practical problems', function () {
     it('valid anagrams', function() {
         expect(validAnagram('anagram', 'nagaram')).toBeTruthy()
         expect(validAnagram('rat', 'car')).toBeFalsy()
+    })
+
+    it('valid palindrome string', function() {
+        expect(validPalindrome('race a car')).toBeFalsy()
+        expect(validPalindrome('A man, a plan, a canal: Panama')).toBeTruthy()
+        expect(validPalindrome(' ')).toBeTruthy()
     })
 })
