@@ -1,5 +1,6 @@
 import baseBallGame from '../../src/problems/baseBallGame'
 import findDuplicates from '../../src/problems/findDuplicates'
+import firstUniqueChar from '../../src/problems/firstUniqueChar'
 import maxSubArray from '../../src/problems/maxSubArray'
 import isPowerOfThree from '../../src/problems/powerOfThree'
 import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
@@ -84,5 +85,11 @@ describe('tests for the practical problems', function () {
         expect(validPalindrome('race a car')).toBeFalsy()
         expect(validPalindrome('A man, a plan, a canal: Panama')).toBeTruthy()
         expect(validPalindrome(' ')).toBeTruthy()
+    })
+
+    it('first unique character in string', function() {
+        expect(firstUniqueChar('leetcode')).toEqual(0)
+        expect(firstUniqueChar('loveleetcode')).toEqual(2)
+        expect(firstUniqueChar('l')).toEqual(0)
     })
 })

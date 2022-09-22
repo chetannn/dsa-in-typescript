@@ -35,17 +35,18 @@
 
 ### Problems
 
-* [x] Find Duplicates
-* [x] Two Sum
-* [x] Self Dividing Numbers
-* [x] Maximum sub array sum
-* [x] Base ball game
-* [x] Reverse string using in place
-* [x] Reverse string using stack
-* [x] Power of three
-* [x] Valid parentheses
-* [x] Valid anagrams
-* [x] Valid Palindrome string
+* [x] [Find Duplicates](https://leetcode.com/problems/contains-duplicate)
+* [x] [Two Sum](https://leetcode.com/problems/two-sum)
+* [x] [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers)
+* [x] [Maximum sub array sum](https://leetcode.com/problems/maximum-subarray)
+* [x] [Base ball game](https://leetcode.com/problems/baseball-game)
+* [x] [Reverse string using in place](https://leetcode.com/problems/reverse-string)
+* [x] [Reverse string using stack](https://leetcode.com/problems/reverse-string)
+* [x] [Power of three](https://leetcode.com/problems/power-of-three)
+* [x] [Valid parentheses](https://leetcode.com/problems/valid-parentheses)
+* [x] [Valid anagrams](https://leetcode.com/problems/valid-anagram)
+* [x] [Valid Palindrome string](https://leetcode.com/problems/valid-palindrome)
+* [x] [First unique character in string](https://leetcode.com/problems/first-unique-character-in-a-string)
 
 ### Resources
 
