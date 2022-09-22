@@ -2,6 +2,7 @@ import baseBallGame from '../../src/problems/baseBallGame'
 import findDuplicates from '../../src/problems/findDuplicates'
 import firstUniqueChar from '../../src/problems/firstUniqueChar'
 import maxSubArray from '../../src/problems/maxSubArray'
+import missingNumber from '../../src/problems/missingNumber'
 import isPowerOfThree from '../../src/problems/powerOfThree'
 import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
 import reverseStringStack from '../../src/problems/reverseStringStack'
@@ -91,5 +92,11 @@ describe('tests for the practical problems', function () {
         expect(firstUniqueChar('leetcode')).toEqual(0)
         expect(firstUniqueChar('loveleetcode')).toEqual(2)
         expect(firstUniqueChar('l')).toEqual(0)
+    })
+
+    it('missing single number', function() {
+        expect(missingNumber([3, 0, 1])).toEqual(2)
+        expect(missingNumber([0, 1])).toEqual(2)
+        expect(missingNumber([9,6,4,2,3,5,7,0,1])).toEqual(8)
     })
 })

@@ -47,6 +47,7 @@
 * [x] [Valid anagrams](https://leetcode.com/problems/valid-anagram)
 * [x] [Valid Palindrome string](https://leetcode.com/problems/valid-palindrome)
 * [x] [First unique character in string](https://leetcode.com/problems/first-unique-character-in-a-string)
+* [] [Missing Number](https://leetcode.com/problems/missing-number)
 
 ### Resources
 
