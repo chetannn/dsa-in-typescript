@@ -1,4 +1,4 @@
-export default function twoSum(arr: number[], target: number): number[] {
+export function twoSum(arr: number[], target: number): number[] {
     const indicesArr: number[] = []
 
     for (let i = 0; i < arr.length; i++) {

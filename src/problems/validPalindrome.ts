@@ -1,4 +1,4 @@
-export default function validPalindrome(s: string) : boolean {
+export function validPalindrome(s: string) : boolean {
     
     let left = 0
     let right = s.length - 1

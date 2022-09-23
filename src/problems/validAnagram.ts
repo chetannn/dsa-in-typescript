@@ -1,4 +1,4 @@
-export default function validAnagram(s: string, t: string) : boolean {
+export function validAnagram(s: string, t: string) : boolean {
 
     if(s.length !== t.length) return false
     

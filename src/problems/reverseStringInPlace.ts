@@ -1,4 +1,4 @@
-export default function reverseStringInPlace(str: string[]): void {
+export function reverseStringInPlace(str: string[]): void {
     let left = 0
     let right = str.length - 1
 

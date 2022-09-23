@@ -1,4 +1,4 @@
-export default function selfDividing(left: number, right: number): number[] {
+export function selfDividingNumber(left: number, right: number): number[] {
     const selfDividingNumbers = []
 
     for (let i = left; i <= right; i++) {

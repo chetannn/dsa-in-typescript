@@ -1,16 +1,18 @@
-import baseBallGame from '../../src/problems/baseBallGame'
-import findDuplicates from '../../src/problems/findDuplicates'
-import firstUniqueChar from '../../src/problems/firstUniqueChar'
-import maxSubArray from '../../src/problems/maxSubArray'
-import missingNumber from '../../src/problems/missingNumber'
-import isPowerOfThree from '../../src/problems/powerOfThree'
-import reverseStringInPlace from '../../src/problems/reverseStringInPlace'
-import reverseStringStack from '../../src/problems/reverseStringStack'
-import selfDividing from '../../src/problems/selfDividingNumber'
-import twoSum from '../../src/problems/twoSum'
-import validAnagram from '../../src/problems/validAnagram'
-import validPalindrome from '../../src/problems/validPalindrome'
-import isValidParentheses from '../../src/problems/validParentheses'
+import {
+        baseBallGame, 
+        findDuplicates, 
+        firstUniqueChar, 
+        selfDividingNumber,
+        maxSubArray,
+        missingNumber, 
+        isPowerOfThree, 
+        reverseStringInPlace, 
+        reverseStringStack,
+        isValidParentheses,
+        twoSum,
+        validAnagram,
+        validPalindrome
+} from "../../src/problems/index"
 
 describe('tests for the practical problems', function () {
     it('check for duplicate in an array', function () {
@@ -26,7 +28,7 @@ describe('tests for the practical problems', function () {
     })
 
     it('returns all the self dividing numbers within a range', function () {
-        const nums = selfDividing(1, 22)
+        const nums = selfDividingNumber(1, 22)
 
         expect(nums.length).toBe(13)
         expect(nums).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22])

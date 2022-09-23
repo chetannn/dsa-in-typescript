@@ -12,7 +12,7 @@
 * [] Stack
 * [] Trees
 * [] Graphs
-
+* [x] Binary Search Tree
 
 ### Algorithms
 

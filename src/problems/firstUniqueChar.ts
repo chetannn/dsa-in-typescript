@@ -1,4 +1,4 @@
-export default function firstUniqueChar(s: string) : number {
+export function firstUniqueChar(s: string) : number {
     const hashMap = new Map()
 
     for(let i=0; i < s.length; i++) {

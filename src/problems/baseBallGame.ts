@@ -1,4 +1,4 @@
-export default function baseBallGame(ops: string[]): number {
+export function baseBallGame(ops: string[]): number {
     let result = 0
     let record: number[] = []
 

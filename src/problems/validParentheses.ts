@@ -1,4 +1,4 @@
-export default function isValidParentheses(s: string) : boolean {
+export function isValidParentheses(s: string) : boolean {
 
     if(s.length === 1) return false
 

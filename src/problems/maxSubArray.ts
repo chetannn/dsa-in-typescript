@@ -1,5 +1,5 @@
 // kadane's algorithm
-export default function maxSubArray(nums: number[]) {
+export function maxSubArray(nums: number[]) {
     let currentSum = 0
     let maxSum = nums[0]
 

@@ -1,4 +1,4 @@
-export default function reverseStringStack(inputStr: string[]): void {
+export function reverseStringStack(inputStr: string[]): void {
     const stack = []
 
     for (let i = 0; i < inputStr.length; i++) {
