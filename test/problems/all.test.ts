@@ -11,7 +11,8 @@ import {
         isValidParentheses,
         twoSum,
         validAnagram,
-        validPalindrome
+        validPalindrome,
+        happyNumber
 } from "../../src/problems/index"
 
 describe('tests for the practical problems', function () {
@@ -100,5 +101,10 @@ describe('tests for the practical problems', function () {
         expect(missingNumber([3, 0, 1])).toEqual(2)
         expect(missingNumber([0, 1])).toEqual(2)
         expect(missingNumber([9,6,4,2,3,5,7,0,1])).toEqual(8)
+    })
+
+    it('happy number', function() {
+        expect(happyNumber(19)).toBeTruthy()
+        expect(happyNumber(2)).toBeFalsy()
     })
 })

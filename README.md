@@ -48,6 +48,7 @@
 * [x] [Valid Palindrome string](https://leetcode.com/problems/valid-palindrome)
 * [x] [First unique character in string](https://leetcode.com/problems/first-unique-character-in-a-string)
 * [x] [Missing Number](https://leetcode.com/problems/missing-number)
+* [x] [Happy Number](https://leetcode.com/problems/happy-number)
 
 ### Resources
 
