@@ -12,7 +12,8 @@ import {
         twoSum,
         validAnagram,
         validPalindrome,
-        happyNumber
+        happyNumber,
+        goodString
 } from "../../src/problems/index"
 
 describe('tests for the practical problems', function () {
@@ -106,5 +107,11 @@ describe('tests for the practical problems', function () {
     it('happy number', function() {
         expect(happyNumber(19)).toBeTruthy()
         expect(happyNumber(2)).toBeFalsy()
+    })
+
+    it('good string', function() {
+        expect(goodString('leEeetcode')).toEqual('leetcode')
+        expect(goodString('')).toEqual('')
+        expect(goodString('abBAcC')).toEqual('')
     })
 })
