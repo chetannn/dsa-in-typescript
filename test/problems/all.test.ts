@@ -13,7 +13,8 @@ import {
         validAnagram,
         validPalindrome,
         happyNumber,
-        goodString
+        goodString,
+        longestCommonPrefix
 } from "../../src/problems/index"
 
 describe('tests for the practical problems', function () {
@@ -113,5 +114,10 @@ describe('tests for the practical problems', function () {
         expect(goodString('leEeetcode')).toEqual('leetcode')
         expect(goodString('')).toEqual('')
         expect(goodString('abBAcC')).toEqual('')
+    })
+
+    it('longest common prefix', function() {
+        expect(longestCommonPrefix(['flower', 'flow', 'flight'])).toEqual('fl')
+        expect(longestCommonPrefix(['dog', 'racecar', 'car'])).toEqual('')
     })
 })
