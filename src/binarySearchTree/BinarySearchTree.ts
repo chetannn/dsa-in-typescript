@@ -1,31 +1,30 @@
 class TreeNode {
-    private left: TreeNode|null
-    private right: TreeNode|null
+    private left: TreeNode | null
+    private right: TreeNode | null
 
-    constructor(public value: number|null) {
+    constructor(public value: number | null) {
         this.left = null
         this.right = null
     }
 
     add(value: number) {
-
-        if(this.value === null) {
+        if (this.value === null) {
             this.value = value
             return
         }
 
-        if(this.value < value) {
-            if(this.right) {
+        if (this.value < value) {
+            if (this.right) {
                 this.right.add(value)
                 return
             }
             const newNode = new TreeNode(value)
             this.right = newNode
-            return 
+            return
         }
 
-        if(this.value > value) {
-            if(this.left) {
+        if (this.value > value) {
+            if (this.left) {
                 this.left.add(value)
                 return
             }
@@ -35,27 +34,24 @@ class TreeNode {
         }
     }
 
-    find(value: number) : TreeNode|null {
-
-        if(this.value === value) {
+    find(value: number): TreeNode | null {
+        if (this.value === value) {
             return this
         }
 
-        if(this.value! < value && this.right) {
+        if (this.value! < value && this.right) {
             return this.right.find(value)
         }
 
-        if(this.value! > value && this.left) {
+        if (this.value! > value && this.left) {
             return this.left.find(value)
         }
 
         return null
-
     }
 }
 
 class BinarySearchTree {
-        
     private root: TreeNode
 
     constructor() {
@@ -66,11 +62,9 @@ class BinarySearchTree {
         this.root.add(value)
     }
 
-    remove() {
+    remove() {}
 
-    }
-
-    find(value: number) : TreeNode|null {
+    find(value: number): TreeNode | null {
         return this.root.find(value)
     }
 }

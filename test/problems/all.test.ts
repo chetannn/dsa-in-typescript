@@ -1,21 +1,21 @@
 import {
-        baseBallGame, 
-        findDuplicates, 
-        firstUniqueChar, 
-        selfDividingNumber,
-        maxSubArray,
-        missingNumber, 
-        isPowerOfThree, 
-        reverseStringInPlace, 
-        reverseStringStack,
-        isValidParentheses,
-        twoSum,
-        validAnagram,
-        validPalindrome,
-        happyNumber,
-        goodString,
-        longestCommonPrefix
-} from "../../src/problems/index"
+    baseBallGame,
+    findDuplicates,
+    firstUniqueChar,
+    selfDividingNumber,
+    maxSubArray,
+    missingNumber,
+    isPowerOfThree,
+    reverseStringInPlace,
+    reverseStringStack,
+    isValidParentheses,
+    twoSum,
+    validAnagram,
+    validPalindrome,
+    happyNumber,
+    goodString,
+    longestCommonPrefix,
+} from '../../src/problems/index'
 
 describe('tests for the practical problems', function () {
     it('check for duplicate in an array', function () {
@@ -74,7 +74,7 @@ describe('tests for the practical problems', function () {
         expect(isPowerOfThree(-1)).toBeFalsy()
     })
 
-    it('valid parentheses', function() {
+    it('valid parentheses', function () {
         expect(isValidParentheses('[')).toBeFalsy()
         expect(isValidParentheses('[]')).toBeTruthy()
         expect(isValidParentheses(']()')).toBeFalsy()
@@ -82,41 +82,41 @@ describe('tests for the practical problems', function () {
         expect(isValidParentheses('[({})]')).toBeTruthy()
     })
 
-    it('valid anagrams', function() {
+    it('valid anagrams', function () {
         expect(validAnagram('anagram', 'nagaram')).toBeTruthy()
         expect(validAnagram('rat', 'car')).toBeFalsy()
     })
 
-    it('valid palindrome string', function() {
+    it('valid palindrome string', function () {
         expect(validPalindrome('race a car')).toBeFalsy()
         expect(validPalindrome('A man, a plan, a canal: Panama')).toBeTruthy()
         expect(validPalindrome(' ')).toBeTruthy()
     })
 
-    it('first unique character in string', function() {
+    it('first unique character in string', function () {
         expect(firstUniqueChar('leetcode')).toEqual(0)
         expect(firstUniqueChar('loveleetcode')).toEqual(2)
         expect(firstUniqueChar('l')).toEqual(0)
     })
 
-    it('missing single number', function() {
+    it('missing single number', function () {
         expect(missingNumber([3, 0, 1])).toEqual(2)
         expect(missingNumber([0, 1])).toEqual(2)
-        expect(missingNumber([9,6,4,2,3,5,7,0,1])).toEqual(8)
+        expect(missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1])).toEqual(8)
     })
 
-    it('happy number', function() {
+    it('happy number', function () {
         expect(happyNumber(19)).toBeTruthy()
         expect(happyNumber(2)).toBeFalsy()
     })
 
-    it('good string', function() {
+    it('good string', function () {
         expect(goodString('leEeetcode')).toEqual('leetcode')
         expect(goodString('')).toEqual('')
         expect(goodString('abBAcC')).toEqual('')
     })
 
-    it('longest common prefix', function() {
+    it('longest common prefix', function () {
         expect(longestCommonPrefix(['flower', 'flow', 'flight'])).toEqual('fl')
         expect(longestCommonPrefix(['dog', 'racecar', 'car'])).toEqual('')
     })
