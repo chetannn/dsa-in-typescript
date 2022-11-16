@@ -15,6 +15,7 @@ import {
     happyNumber,
     goodString,
     longestCommonPrefix,
+    reverseWithoutSpecialCharacters,
 } from '../../src/problems/index'
 
 describe('tests for the practical problems', function () {
@@ -119,5 +120,9 @@ describe('tests for the practical problems', function () {
     it('longest common prefix', function () {
         expect(longestCommonPrefix(['flower', 'flow', 'flight'])).toEqual('fl')
         expect(longestCommonPrefix(['dog', 'racecar', 'car'])).toEqual('')
+    })
+
+    it('reverse string without special characters', function () {
+        expect(reverseWithoutSpecialCharacters('ab-cd')).toEqual('dc-ba')
     })
 })
