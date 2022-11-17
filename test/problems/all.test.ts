@@ -16,6 +16,7 @@ import {
     goodString,
     longestCommonPrefix,
     reverseWithoutSpecialCharacters,
+    numUniqueEmails
 } from '../../src/problems/index'
 
 describe('tests for the practical problems', function () {
@@ -124,5 +125,13 @@ describe('tests for the practical problems', function () {
 
     it('reverse string without special characters', function () {
         expect(reverseWithoutSpecialCharacters('ab-cd')).toEqual('dc-ba')
+        expect(reverseWithoutSpecialCharacters('7]28_')).toEqual('7]28_')
+    })
+
+    it('unique email addresses', function() {
+            expect(numUniqueEmails(['a@leetcode.com', 'b@leetcode.com', 'c@leetcode.com'])).toEqual(3)
+            expect(numUniqueEmails(['test.email+alex@leetcode.com',
+                                   'test.e.mail+bob.cathy@leetcode.com', 
+                                   'testemail+david@lee.tcode.com'])).toEqual(2)
     })
 })

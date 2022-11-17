@@ -1,5 +1,5 @@
 function isAlphabet(str: string): boolean {
-    return str.charCodeAt(0) >= 65 && str.charCodeAt(0) <= 122
+    return (str.charCodeAt(0) >= 65 && str.charCodeAt(0) <= 90) || (str.charCodeAt(0) >= 97 && str.charCodeAt(0) <= 122)
 }
 
 export function reverseWithoutSpecialCharacters(s: string): string {

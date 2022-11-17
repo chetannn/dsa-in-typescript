@@ -49,6 +49,8 @@
 * [x] [First unique character in string](https://leetcode.com/problems/first-unique-character-in-a-string)
 * [x] [Missing Number](https://leetcode.com/problems/missing-number)
 * [x] [Happy Number](https://leetcode.com/problems/happy-number)
+* [x] [Make the string great](https://leetcode.com/problems/make-the-string-great)
+* [x] [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses)
 
 ### Resources
 
