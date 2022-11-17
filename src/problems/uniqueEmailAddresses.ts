@@ -1,22 +1,19 @@
-export function numUniqueEmails(emails: string[]) : number {
-        
-        const uniqueEmails = new Map()
+export function numUniqueEmails(emails: string[]): number {
+    const uniqueEmails = new Map()
 
-        for(let i=0; i < emails.length; i++) {
+    for (let i = 0; i < emails.length; i++) {
+        const localName = emails[i].split('@')[0]
+        const domainName = emails[i].split('@')[1]
 
-                const localName = emails[i].split('@')[0]
-                const domainName = emails[i].split('@')[1]
+        let localNameBeforePlus = localName.split('+')[0]
+        localNameBeforePlus = localNameBeforePlus.replace(/\./g, '')
 
-                let localNameBeforePlus = localName.split('+')[0]
-                localNameBeforePlus = localNameBeforePlus.replace(/\./g,'')
+        const primaryEmail = localNameBeforePlus + '@' + domainName
 
-                const primaryEmail = localNameBeforePlus + '@' + domainName
-
-                 if(!uniqueEmails.has(primaryEmail)) {
-                        uniqueEmails.set(primaryEmail, domainName)
-                 }
-
+        if (!uniqueEmails.has(primaryEmail)) {
+            uniqueEmails.set(primaryEmail, domainName)
         }
+    }
 
-        return uniqueEmails.size
+    return uniqueEmails.size
 }

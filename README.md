@@ -51,6 +51,7 @@
 * [x] [Happy Number](https://leetcode.com/problems/happy-number)
 * [x] [Make the string great](https://leetcode.com/problems/make-the-string-great)
 * [x] [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses)
+* [x] [Reverse Vowels of a string](https://leetcode.com/problems/reverse-vowels-of-a-string)
 
 ### Resources
 
