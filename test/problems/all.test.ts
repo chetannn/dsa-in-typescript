@@ -18,6 +18,7 @@ import {
     reverseWithoutSpecialCharacters,
     numUniqueEmails,
     reverseVowels,
+    countBits
 } from '../../src/problems/index'
 
 describe('tests for the practical problems', function () {
@@ -149,5 +150,10 @@ describe('tests for the practical problems', function () {
     it('reverse vowels of a string', function () {
         expect(reverseVowels('hello')).toEqual('holle')
         expect(reverseVowels('leetcode')).toEqual('leotcede')
+    })
+
+    it('count bits in a binary number', function() {
+            expect(countBits(2)).toEqual([0,1,1])
+            expect(countBits(5)).toEqual([0,1,1,2,1,2])
     })
 })
