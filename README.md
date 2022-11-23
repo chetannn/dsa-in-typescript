@@ -53,6 +53,7 @@
 * [x] [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses)
 * [x] [Reverse Vowels of a string](https://leetcode.com/problems/reverse-vowels-of-a-string)
 * [x] [Counting bits](https://leetcode.com/problems/counting-bits)
+* [x] [Best time to buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 
 ### Resources
 
