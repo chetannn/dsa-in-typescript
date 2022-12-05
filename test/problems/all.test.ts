@@ -20,6 +20,7 @@ import {
     reverseVowels,
     countBits,
     maxProfit,
+    generateParentheses,
 } from '../../src/problems/index'
 
 describe('tests for the practical problems', function () {
@@ -161,5 +162,16 @@ describe('tests for the practical problems', function () {
     it('best time to buy and sell stock', function () {
         expect(maxProfit([7, 1, 5, 3, 6, 4])).toEqual(5)
         expect(maxProfit([7, 6, 4, 3, 1])).toEqual(0)
+    })
+
+    it('generate parentheses', function () {
+        expect(generateParentheses(1)).toEqual(['()'])
+        expect(generateParentheses(3)).toEqual([
+            '((()))',
+            '(()())',
+            '(())()',
+            '()(())',
+            '()()()',
+        ])
     })
 })
