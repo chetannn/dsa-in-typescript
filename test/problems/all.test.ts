@@ -21,6 +21,7 @@ import {
     countBits,
     maxProfit,
     generateParentheses,
+    singleNumber,
 } from '../../src/problems/index'
 
 describe('tests for the practical problems', function () {
@@ -173,5 +174,11 @@ describe('tests for the practical problems', function () {
             '()(())',
             '()()()',
         ])
+    })
+
+    it('single number', function () {
+        expect(singleNumber([1])).toEqual(1)
+        expect(singleNumber([4, 1, 2, 1, 2])).toEqual(4)
+        expect(singleNumber([2, 2, 1])).toEqual(1)
     })
 })

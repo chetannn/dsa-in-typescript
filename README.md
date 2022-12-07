@@ -55,6 +55,7 @@
 * [x] [Counting bits](https://leetcode.com/problems/counting-bits)
 * [x] [Best time to buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 * [x] [Generate parentheses](https://leetcode.com/problems/generate-parentheses)
+* [x] [Single Number](https://leetcode.com/problems/single-number)
 
 ### Resources
 
